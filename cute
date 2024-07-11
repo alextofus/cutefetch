@@ -1,32 +1,23 @@
 #!/bin/sh
 
-# print sys inf
+# Function to print system information
 conf() {
   printf "
-  (\ /)    kr  $(uname -r | awk -F '-' '{print $1}') 
+  (\ /)    kr  $(uname -r | awk -F '-' '{print $1}')
   ( · ·)   os  $(uname -o)
-  c(\")(\")  sh  $(basename $SHELL)
+  c(")(")  sh  $(basename $SHELL)
   \n"
 }
 
-# useless/bloat
-#make_something() {
- # echo "Making something..."
- # # Replace with actual make command if needed
+# Function to perform some action (you can replace with actual logic)
+make_something() {
+  echo "Making something..."
+  # Replace with actual make command if needed
   # Example: make
 }
 
-# smth/bloat
-fetch_something() {
- # echo "Fetching something..."
-  # Replace with actual fetch command if needed
-  # Example: cutefetch
-}
-
-# you need this conf so this bash sprict can ackutally run 
+# Print system information
 conf
 
-# Call functions to perform actions
+# Call function to perform action
 make_something
-fetch_something
-
