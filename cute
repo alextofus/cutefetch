@@ -1,0 +1,32 @@
+#!/bin/sh
+
+# Function to print system information
+conf() {
+  printf "
+  (\ /)    kr  $(uname -r | awk -F '-' '{print $1}') 
+  ( · ·)   os  $(uname -o)
+  c(\")(\")  sh  $(basename $SHELL)
+  \n"
+}
+
+# Function to make something
+make_something() {
+  echo "Making something..."
+  # Replace with actual make command if needed
+  # Example: make
+}
+
+# Function to fetch something
+fetch_something() {
+  echo "Fetching something..."
+  # Replace with actual fetch command if needed
+  # Example: fetch
+}
+
+# Call the conf function to print system information
+conf
+
+# Call functions to perform actions
+make_something
+fetch_something
+
