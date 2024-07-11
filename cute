@@ -1,23 +1,37 @@
 #!/bin/sh
 
-# Function to print system information
+# Function to print system information also bloated
 conf() {
   printf "
-  (\ /)    kr  $(uname -r | awk -F '-' '{print $1}')
-  ( · ·)   os  $(uname -o)
-  c(")(")  sh  $(basename $SHELL)
+  (\ /)    kn ~ $(uname -r | awk -F '-' '{print $1}')
+  ( · ·)   os ~ $(uname -o)
+  c(\")(\")  sh ~ $(basename $SHELL)
   \n"
 }
 
-# Function to perform some action (you can replace with actual logic)
+# Function to perform some action (example: make something)
 make_something() {
-  echo "Making something..."
-  # Replace with actual make command if needed
+  echo ""
+  # send an msg
   # Example: make
+}
+
+# msg blah blash
+fetch_something() {
+  echo ""
+  # Replace with actual fetch command if needed
+  # Example: cutefetch
+}
+
+# Function to fix something (placeholder) [bloat]
+fix_it() {
+  echo ""
+  # Replace with actual fix command if needed
 }
 
 # Print system information
 conf
 
-# Call function to perform action
+# Call functions to perform actions
 make_something
+fetch_something
